@@ -1,0 +1,4 @@
+services:
+  javaapp:
+    build: .
+    container_name: java-container

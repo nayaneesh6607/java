@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  name: java-job
+
+spec:
+  template:
+    spec:
+      containers:
+      - name: java-container
+        image: myjava:latest
+        imagePullPolicy: Never
+
+      restartPolicy: Never
+
+  backoffLimit: 0
